@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datasikkerhed</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/light-and-dark.js" defer></script>
+    <script src="https://kit.fontawesome.com/26c90231d9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Navigation -->
+    <header>
+    <nav>
+        <a href="index.html"><i class="fa-solid fa-key fa-3x" ></i></a>
+        <ul>
+            <li><a href="#">Om</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+        <!--<button class="bars"><i class="fa-solid fa-bars"></i></button>-->
+    </nav>   
+</header>
+
+<!-- Hovedindhold -->
+<main>
+    <section class="pwimg">
+        <img src="img/password.png" alt="AI-genereret billede af en computer, lås og skjold">
+    </section>
+    <section class="scenes">
+        <!-- Introduktion -->
+        <div id="scene0">
+            <h1>Hvordan forholder du dig, når du skal oprette og opbevare dine kodeord?</h1>
+            <p>Vi har kodeord til mange forskellige ting, på flere forskellige enheder. Nogle synes mere vigtige end andre. Hvordan bør man egentlig oprette og bevare dem, så man sikrer sig bedst mod malware, hacking og misbrug af ens oplysninger?</p>
+            <p>Forsøg dig ad nedenfor, for at se hvilke valg du ville træffe i forbindelse med oprettelse og opbevaring af kodeord.</p>
+            <button id="b0">Lad os komme i gang!</button>
+        </div>
+        <!-- Scene 1 -->
+        <div id="scene1" class="hidden">
+            <p>Forestil dig, at du skal oprette et nyt kodeord til din arbejdscomputer. Hvilken slags kode ville du vælge?</p>
+            <button id="b1">Noget nemt og genkendeligt som fx "Maj2025"?</button>
+            <button id="b2">Generere en kode vha. en adgangskodegenerator?</button>
+        </div>
+        <!-- Negativ feedback-->
+        <div id="negativ" class="hidden">
+            <p>Åh nej! Din konto blev hacket!</p>
+            <p>Du valgte desværre en kode, som var nem at gætte. Nemme og korte kodeord kan nemt findes i datalæk, så du bør oprette en unik og stærk kode næste gang.</p>
+            <button id="restart">Vil du prøve igen?</button>
+        </div>
+        <!-- Scene 2 -->
+        <div id="scene2" class="hidden">
+            <p>Godt valg! Det er et klogt valg at få oprettet en unik og stærk kode, som er svær at gætte. På denne måde sikrer man sig mod misbrug af sine oplysninger</p>
+            <p>En automatik genereret adgangskode kan være svær at huske. Hvordan vil du opbevare din kode, så du kan logge ind igen næste gang?</p>
+            <button id="b3">Du bruger en password manager, som kan gemme din kode for dig, så du kan tilgå koden derfra, når du skal bruge den.</button>
+            <button id="b4">Du skriver den ned på en post-it, som du bevarer tæt på dine arbejdsting, så den altid er lige ved hånden, når du skal bruge den.</button>
+            <br></br>
+            <br></br>
+            <button id="b5">Gå tilbage</button>
+        </div>
+        <!-- Positiv feedback -->
+        <div id="positiv" class="hidden">
+            <p>Lige netop!</p>
+            <p>Du har valgt en stærk kode, som du har fået opbevaret sikkert. På denne måde er din konto godt beskyttet mod eventuelle angreb og misbrug af din konto.</p>
+            <button id="restart">Vil du prøve igen?</button>
+        </div>
+        <!-- Neutral feedback -->
+        <div id="neutral" class="hidden">
+            <p>Det ville nok være den nemme løsning.</p>
+            <p>Selvom du fik oprettet et stærkt og unikt kodeord, kunne du have forbedret beskyttelsen af din konto ved at opbevare den mere sikkert. I dette tilfælde, ville en kollega, en bekendt eller en fremmed nemt kunne aflæse din kode på post-it'en. Dette skaber en usikkerhed i hvor beskyttet din konto er. Derfor bør du overveje at opbevare dine kodeord mere sikkert fremover.</p>
+            <button id="restart">Vil du prøve igen?</button>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>KeyData</p>
+    <p>Saurusvej 2, 2302 Glacestrup</p>
+    <p>Tlf.: <a href="tel:+4524681357">24 68 13 57</a></p>
+    <p>E-mail: <a href="mailto:info@keydata.dk">info@keydata.dk</a></p>
+</footer>
+</body>
+</html>
